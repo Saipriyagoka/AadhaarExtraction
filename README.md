@@ -9,7 +9,7 @@ This is basically an API based Project. So Just simply upload an image(AadhaarCa
 ![Screenshot (32)](https://user-images.githubusercontent.com/49297116/67531097-dfd59580-f6de-11e9-93d2-4369bc66fab1.png)
 
 You will get the result in one step,
-![Screenshot (34)](https://user-images.githubusercontent.com/49297116/67531118-f67bec80-f6de-11e9-8a65-ec271ec5580b.png)
+![InkedScreenshot (34)_LI](https://user-images.githubusercontent.com/49297116/67531974-4b6d3200-f6e2-11e9-9f35-a800a811958d.jpg)
 
 # Prerequisites
 * #### Python
