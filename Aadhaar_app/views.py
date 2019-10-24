@@ -17,22 +17,12 @@ import face_recognition
 def index(request):
     return render(request , 'Aadhaar_app/search.html')
 
-# def Image_upload(request):
-#     if request.method == 'POST':
-#         file = request.FILES['Aadhaar_Image']
-#         fileurl = file.url
-#         filename = file.name.split('.')[0]
-#         return redirect('AadhaarList' , pk1 = fileurl , pk2=filename)
-#     return render(request, 'Aadhaar_app/search.html')
-
 def AadhaarList(request):
     if request.method == 'POST':
         file = request.FILES['Aadhaar_Image']
         filename = file.name.split('.')[0]
         #Build a numpy array using the uploaded data. Decode this array using cv2.
-        #resp = urllib.urlopen(fileurl)
         image = cv2.imdecode(np.fromstring(file.read(), dtype="uint8"), cv2.IMREAD_UNCHANGED)
-        #image = cv2.imread(file)
         keyList = ["Name", "Date_of_birth" , "Gender" , "Aadhaar_Number"]
         ex_dict={key: None for key in keyList}
         final_dict=brighten(image,ex_dict)
@@ -50,14 +40,9 @@ def Pass_info(request,pk):
     else:
         return render(request, 'Aadhaar_app/search.html', {"details" : details} )
 
-
 def Try_again(request, template_name='Aadhaar_app/search.html'):
     args = {}
     text = "Please upload a high quality Picture...."
     args['mytext'] = text
     return TemplateResponse(request, template_name, args)
 
-
-#def Try_again(request):
-#    return HttpResponse('Plase try with high quality Picture....')
-#    return render(request, 'Aadhaar_app/search.html')
