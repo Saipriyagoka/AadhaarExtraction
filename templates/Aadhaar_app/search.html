@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/myStyle1.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <center>
+      <p><b>
+        <span class='a'>A</span>
+        <span class='b'>a</span>
+       <span class='c'>d</span>
+       <span class='d'>h</span>
+       <span class='e'>a</span>
+       <span class='f'>a</span>
+       <span class='g'>r</span>
+       <span class='h'>E</span>
+       <span class='i'>x</span>
+       <span class='j'>t</span>
+       <span class='k'>r</span>
+       <span class='l'>a</span>
+       <span class='m'>c</span>
+       <span class='n'>t</span>
+       <span class='o'>i</span>
+       <span class='p'>o</span>
+       <span class='q'>n</span>
+       </b></p>
+
+      <div class="ui-widget">
+        <form class="form-inline mr-auto" method="post" enctype="multipart/form-data" action="{% url 'AadhaarList' %}">
+          {% csrf_token %}
+          <input type="file" name="Aadhaar_Image" accept="image/*">
+          <button type="submit">Extract</button>
+        </form>
+        <br>
+        <br>
+        <nr>
+      </div>
+
+      <div class='res'>
+        {% if details %}
+          {% for k in details %}
+          <table border='0px' width='400px'>
+            <tr>
+              <td class="m1">Name:<td>
+              <td>{{k.name}}</td>
+            </tr>
+            <tr >
+              <td class="m2">Date_of_birth:<td>
+              <td>{{k.year_of_birth}}</td>
+            </tr>
+            <tr>
+              <td class="m3">Gender:<td>
+              <td>{{k.gender}}</td>
+            </tr>
+            <tr>
+              <td class="m4">Aadhaar_Number:<td>
+              <td>{{k.Aadhaar_num}}</td>
+            </tr>
+          </table>
+          <br><br>
+          {% endfor %}
+        {% elif  mytext %}
+          <h1>{{ mytext }}</h1>
+        {% endif %}
+      </div>
+
+    </center>
+  </body>
+</html>
