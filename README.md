@@ -1,6 +1,9 @@
 # AadhaarExtraction
 
-This Project demonstrates how to extract the useful information from the Images(AadhaarCard).
+This Project demonstrates How to:
+* ##### Upload the image,
+* ##### Extract the useful information from the Images(AadhaarCard)
+* ##### And after successful extraction how to actually store the information.
 
 # Getting Started
 
@@ -18,9 +21,10 @@ You will get the result in one step,
 * Tesseract has unicode (UTF-8) support, and can recognize more than 100 languages "out of the box".
 * Tesseract supports various output formats: plain text, hOCR (HTML), PDF, invisible-text-only PDF, TSV. The master branch also has experimental support for ALTO (XML) output.
 
+
+## Recommendations:
 In order to obtain reasonable results, you need to supply images that are cleanly pre-processed and crisp.
-  ###### Recommendations:
-    1) Use images with high resolution and DPI possible.
-    2) Make sure that the text is clearly visible and with no pixelations or deformations.
+   1) Use images with high resolution and DPI possible.
+   2) Make sure that the text is clearly visible and with no pixelations or deformations.
 
 
