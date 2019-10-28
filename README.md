@@ -1,9 +1,9 @@
 # AadhaarExtraction
 
-This Project demonstrates How to:
-* ##### Upload the image,
-* ##### Extract the useful information from the Images(AadhaarCard)
-* ##### And after successful extraction how to actually store the information.
+This Project demonstrates:
+* ##### How to Upload the image.
+* ##### How to Extract the useful information from the Images(AadhaarCard).
+* ##### After successful extraction how to actually store the information.
 
 # Getting Started
 
