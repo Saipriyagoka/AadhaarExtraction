@@ -7,7 +7,7 @@ This Project demonstrates:
 
 # Getting Started
 
-This is basically an API based Project. So Just simply upload an image(AadhaarCard),
+Here you go,
 
 ![Screenshot (32)](https://user-images.githubusercontent.com/49297116/67531097-dfd59580-f6de-11e9-93d2-4369bc66fab1.png)
 
